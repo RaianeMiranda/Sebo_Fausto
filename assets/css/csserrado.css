@@ -1,0 +1,13 @@
+.coluna {
+  
+}
+
+.duas-colunas{
+    display: flex;
+    
+}
+
+.duas-colunas > div{
+justify-content: space-evenly;
+font-weight: bold;
+}
