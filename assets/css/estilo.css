@@ -79,6 +79,13 @@ a {
     margin-bottom: 25px;
 }
 
+.form_control{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: row;
+}
+
 .foto {
     text-align: center;
     margin: 0 auto;
@@ -130,7 +137,7 @@ h4 {
     font-size: 18px;
     font-weight: bold;
 }
- 
+
 .valor {
     font-size: 20px;
     font-weight: bold;
