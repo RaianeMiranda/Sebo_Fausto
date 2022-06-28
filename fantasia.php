@@ -1,4 +1,5 @@
 <?php
+$title = "Livros || Fantasia";
 include "header.php";
 ?>
 

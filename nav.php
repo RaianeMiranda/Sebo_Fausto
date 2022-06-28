@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><a href="index.php"><img class="logo" src="assets/images/logo.png" alt=""></a></li>
+        <li><a href="index.php"><img class="logo" src="assets/images/logo2.png" alt=""></a></li>
         <li><a class="nav" href="index.php">Inicial</a></li>
         <li><a class="nav" href="colecao.php">Coleções</a></li>
         <li><a class="nav" href="young.php">Young Teen</a></li>
