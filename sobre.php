@@ -1,4 +1,5 @@
 <?php
+$title = "Página || Sobre nós";
 include "header.php";
 ?>
 
