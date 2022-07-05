@@ -9,8 +9,8 @@ echo $_POST['mae'];
 echo $_POST['pai'];
 echo $_POST['cpf'];*/
 
-if(!empty($_POST)){
-print_r($_POST);
+if (!empty($_POST)) {
+    print_r($_POST);
 }
 
 ?>
@@ -47,3 +47,9 @@ print_r($_POST);
         <input type="submit" value="Enviar">
 </div>
 </form>
+
+<?php
+include "footer.php"
+?>
+
+</html

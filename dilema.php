@@ -1,4 +1,34 @@
 <?php
+$titulo = "dilema";
+include "header.php";
+
+if(!empty($_POST)){
+    $numa = $_POST['numa'];
+    $numb = $_POST['numb'];
+    $numc = $_POST['numc'];
+    
+    if($numa>60){
+        echo "numero A não pode ser maior que 60";
+    }
+    if ($numb>100 || $numb<0){
+        echo "Número B não pode ser maior que 100 ou menor que 0";
+    } if ($numc<100 || $numc>200){
+        echo "Número C não pode ser maior que 200 ou menor que 100";
+    }
+}
+print_r($_POST);
+
+
+
+
+
+
+
+
+
+
+
+/*
 $titulo="Página|| Dilema";
 include "header.php";
 
@@ -32,6 +62,7 @@ if (!empty($lado1) && !empty($lado2) && !empty($lado3)) { //Se nenhum formulario
     } else ($mensagem = "Triângulo Escaleno");
 }
 echo $mensagem;
+*/
 ?>
 
 <!DOCTYPE html>
@@ -45,23 +76,19 @@ echo $mensagem;
 <body>
     <h1>Desafio 02</h1>
 
-    <form action="" method="GET">
-        <label for="lado1">Lado1:</label>
-        <input id="lado1" type="text" name="lado1" value=<?php echo $lado1 ?>>
+    <form action="" method="POST">
+        <label for="numa">numa:</label>
+        <input id="numa" type="text" name="numa" value=<?php echo $numa ?>>
 
-        <label for="lado2">Lado2:</label>
-        <input id="lado2" type="text" name="lado2" value=<?php echo $lado2 ?>>
+        <label for="numb">numb:</label>
+        <input id="numb" type="text" name="numb" value=<?php echo $numb ?>>
 
-        <label for="lado3">Lado3:</label>
-        <input id="lado3" type="text" name="lado3" value=<?php echo $lado3 ?>>
+        <label for="numc">numc:</label>
+        <input id="numc" type="text" name="numc" value=<?php echo $numc ?>>
 
         <input type="submit" value="Calcular" name="calcular">
-
-        <br>
-        <span>
-            <h2><?php echo $mensagem ?></h2>
-        </span>
     </form>
+    
 </body>
 
 </html>
